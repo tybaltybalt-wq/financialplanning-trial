@@ -1,5 +1,7 @@
 # Deploys the site to GitHub Pages on every push to main.
-# Only index.html is published; repo files like CLAUDE.md and README.md are not.
+# The original site (index.html at git tag v1) stays at the root URL, and the
+# current index.html is published as the revamp under /v2/.
+# Repo files like CLAUDE.md and README.md are not published.
 name: Deploy to GitHub Pages
 
 on:
@@ -26,11 +28,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history, so the v1 tag is available
 
       - name: Collect site files
         run: |
-          mkdir _site
-          cp index.html _site/
+          mkdir -p _site/v2
+          git show v1:index.html > _site/index.html
+          cp index.html _site/v2/index.html
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
