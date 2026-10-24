@@ -1,0 +1,5 @@
+# Playwright MCP snapshots and console logs
+.playwright-mcp/
+
+# Word lock files
+~$*

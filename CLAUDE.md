@@ -8,7 +8,7 @@ One-page marketing site for "Horizon Wealth Planning", a financial planning firm
 
 ## Running
 
-There is no build, lint or test tooling, and Node is not installed on this machine. To view the site, open the file in the default browser:
+There is no build, lint or test tooling. Node.js (LTS) is installed only to run the Playwright MCP server configured in `.mcp.json`; the site itself must not depend on it. To view the site, open the file in the default browser:
 
 ```powershell
 Start-Process "index.html"
