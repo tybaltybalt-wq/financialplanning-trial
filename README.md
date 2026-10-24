@@ -2,13 +2,24 @@
 
 One-page marketing site for **Horizon Wealth Planning**, a financial planning firm. The whole site is a single `index.html` (HTML, CSS and vanilla JavaScript), deployed to GitHub Pages on every push to `main`.
 
-**Live site:** https://tybaltybalt-wq.github.io/financialplanning-trial/
+## Live versions
 
-## Screenshot
+| Version | URL | What it is |
+|---|---|---|
+| **v2** (current) | https://tybaltybalt-wq.github.io/financialplanning-trial/v2/ | Revamp: soft Eastern design aimed at women, with lead magnets (free guide, Money Flower quiz, guide popup) |
+| v1 (original) | https://tybaltybalt-wq.github.io/financialplanning-trial/ | Original navy-and-gold site, frozen at git tag `v1` |
 
-Full-page capture of the live site, taken with the Playwright MCP server at 1440px width:
+## Screenshots
 
-![Horizon Wealth Planning live site](screenshots/live-site.png)
+Full-page captures of the live sites, taken with the Playwright MCP server at 1440px width.
+
+### v2: Let Your Wealth Blossom
+
+![Horizon Wealth Planning v2 live site](screenshots/v2-site.png)
+
+### v1: original
+
+![Horizon Wealth Planning v1 live site](screenshots/live-site.png)
 
 ## Running locally
 
